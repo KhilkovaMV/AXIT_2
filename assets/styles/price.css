@@ -1,0 +1,125 @@
+
+
+.options {
+    width: 1508px;
+    height: 900px;
+    background: #F5F5F5;
+}
+
+.options__title {
+    display: flex;
+    width: 1170px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    font-family: Raleway;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.options__title:after{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display:block;
+    margin: 40px auto 0;
+}
+
+.options__subtitle {
+    width: 1169px;
+    color: #86878B;
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 400; 
+}
+
+.tables {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-right: 170px;
+    margin-left: 169px;
+}
+
+#main_product {
+    transition: 0.5s;
+}
+#main_product:hover {
+    transform: translate(0px, -20px);
+    box-shadow: 0px 0px 15px gray ;
+}
+
+.product {
+    width: 370px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-upper {   
+    width: 370px;
+    background: #333333;
+    color: #FFFFFF;
+}
+
+.product-upper__name {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: solid 2px white;        
+}
+
+.product-upper__price {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: solid 2px white;
+}
+
+.product-upper__sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-down {
+    width: 370px;
+    border: 2px solid #F5F5F5;
+    background: #FFF;
+}
+
+.product-down__info {        
+    height: 50px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #86878B;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: 2px solid #F5F5F5;    
+}
