@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    height: 164px;
+    background-color: black;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 470.8px;
+    margin-left: 470px;
+    align-items: center; 
+}
+
+
+.footer-icon_media {
+    width: 53.2px;
+    height: 53.2px;
+    color: #CCCCCC;
+    padding: 35px;
+}
+
+
+.footer__subtitle {
+    width: 1169px;
+    height: 21px;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 27px;
+}

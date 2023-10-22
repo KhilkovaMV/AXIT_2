@@ -5,15 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/axit.css">
     <link rel="stylesheet" href="./assets/styles/awesome.css">
     <link rel="stylesheet" href="./assets/styles/price.css">
     <link rel="stylesheet" href="./assets/styles/tabs.css">
+    <link rel="stylesheet" href="./assets/styles/socialMedia.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/reviews.css">
+    <link rel="stylesheet" href="./assets/styles/design.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <span class="header__logo">
+            <img src="./assets/icons/logo.svg" alt="AXIT">
+        </span>
+        <nav class="header__navigation">
+            <a class="header__navigation__normal" href="#">Features</a>
+            <a class="header__navigation__normal" href="#">About</a>
+            <a class="header__navigation__normal" href="#">Pricing</a>
+            <a class="header__navigation__normal" href="#">Reviews</a>
+            <a class="header__navigation__normal" href="#">Contact</a>
+        </nav>                     
+    </header>
+
     <main class="AXIT">
+       
+        <section class="social">
+            <div class="social-text">
+                <h4 class="social-text__title">Social Media</h4>
+                <h5 class="social-text__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Aenean euismod bibendum laoreet. </h5>
+            </div>        
+            <div class="social-icon">
+                <a href="#" class="social-icon_media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
+                <a href="#" class="social-icon_media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
+            </div>
+        </section>
+
         <section class="tabs">
             <section class="tab">
                 <div class="tab__container1">TAB 1</div>
@@ -80,7 +117,7 @@
                 <h2 class="options__title">PRICING OPTIONS</h2>
                 <p class="options__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="tables">
-                    <div class="product">
+                    <div class="product" id="main_product">
                         <div class="product-upper">
                             <div class="product-upper__name">Basic</div>
                             <div class="product-upper__price">$10</div>
@@ -110,7 +147,7 @@
                             <div class="product-down__info">1 gb of space</div>
                         </div>
                     </div>
-                    <div class="product">
+                    <div class="product" id="main_product">
                         <div class="product-upper">
                             <div class="product-upper__name">Pro</div>
                             <div class="product-upper__price">$30</div>
@@ -128,6 +165,95 @@
                 </div>
             </div>
         </section>
+
+        <section class="reviews">
+            <h2 class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+            <p class="reviews__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="block">
+                <div class="block__opinion">
+                    <div class="block__opinion__upper-opinion">
+                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block__opinion__message-opinion"></div>
+                    <div class="block__opinion__down-opinion">
+                        <img src="./assets/images/Men_1.png" alt="images" class="block__opinion__images-preview">
+                        <div class="block__opinion-peopleblock">
+                            <h4 class="block__opinion-peopleblock__title">Davis Rhiel Madsen</h4>
+                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__opinion">
+                    <div class="block__opinion__upper-opinion">
+                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block__opinion__message-opinion"></div>
+                    <div class="block__opinion__down-opinion">
+                        <img src="./assets/images/Men_2.png" alt="images" class="block__opinion__images-preview">
+                        <div class="block__opinion-peopleblock">
+                            <h4 class="block__opinion-peopleblock__title">Jaydon Rosser</h4>
+                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+                </div><div class="block__opinion">
+                    <div class="block__opinion__upper-opinion">
+                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block__opinion__message-opinion"></div>
+                    <div class="block__opinion__down-opinion">
+                        <img src="./assets/images/Men_3.png" alt="images" class="block__opinion__images-preview">
+                        <div class="block__opinion-peopleblock">
+                            <h4 class="block__opinion-peopleblock__title">Cooper Dorwart</h4>
+                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="design">
+            <h3 class="design__title">STYLISH AXURE DESIGN</h3></div>
+            <h5 class="design__subtitle">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</h5>
+            <button class="design__download">Download</button>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__title">CONTACT US</h2> 
+            <div class="contact__subtitle">Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</div> 
+            <div class="contact__areas">
+                <div class="contact__areas__inputs">
+                    <span>
+                        <input class="contact__areas__inputs__line" type="text" placeholder="Name" name="first_name">
+                    </span> 
+                    <span>
+                        <input class="contact__areas__inputs__line" type="email" placeholder="Email" name="email">
+                    </span> 
+                    <span>
+                        <input class="contact__areas__inputs__line" type="password" placeholder="Password" name="password">
+                    </span>
+                </div>
+                <div class="contact__message">
+                    <textarea name="message" class="contact__areas__inputs__line" cols="30" placeholder="Message" rows="10"></textarea>
+                </div>
+            </div>                             
+               
+            <span class="contact__btn">
+                <button class="contact__btn__submit">Send message</button>
+            </span>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-icon">
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
+                <a href="#" class="footer-icon_media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
+            </div>
+            <h5 class="footer__subtitle">© 2015 Axure Themes</h5>
+        </footer>
+
     </main>
 </body>
 </html>

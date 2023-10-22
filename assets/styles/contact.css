@@ -1,0 +1,88 @@
+.contact {
+    height: 622px;
+    margin: 50px 0 50px 0;
+}
+
+.contact__title {
+    display: flex;
+    width: 1170px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.contact__subtitle {
+    width: 1169px;
+    color: #86878B;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.contact__areas {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.contact__areas__inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__areas__inputs__line {
+    width: 571px;
+    height: 50px;
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px #BDBDBD;
+    margin-left: 30px;
+}
+
+.contact__message textarea {
+    width: 571px;
+    height: 172px;
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px #BDBDBD;
+    margin-left: 30px;
+}
+
+.contact__btn__submit {
+    display: flex;
+    width: 370px;
+    height: 58px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: #EC7979;
+    margin-top: 45px;
+}
+
+

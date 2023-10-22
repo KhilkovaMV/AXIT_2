@@ -1,0 +1,114 @@
+.reviews {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reviews__title{
+    display: flex;
+    width: 1170px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.reviews__title:after{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display:block;
+    margin: 54px auto 0;
+}
+
+.reviews__subtitle{
+    width: 1169px;
+    color: #86878B;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.block__opinion {
+    margin: 30px;
+}
+.block__opinion__upper-opinion {
+    width: 370px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #E2E2E2;
+    padding: 20px;
+}
+.block__opinion__message-opinion {
+    color: #fff;
+}
+
+.block__opinion__upper-opinion__title {
+    width: 370px;
+    color: #86878B;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 38px 0 37px 0;
+}
+
+.block__opinion__message-opinion::after {
+    content: '';
+    position: absolute;
+    margin-left: 60px;
+    border: 20px solid transparent;
+    border-top: 20px solid #E2E2E2;
+}
+.block__opinion__down-opinion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.block__opinion__images-preview {
+    width: 70px;
+    height: 70px;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block__opinion-peopleblock__title {
+    display: flex;
+    width: 269px;
+    height: 54px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.block__opinion-peopleblock__subtitle {
+    width: 270px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
