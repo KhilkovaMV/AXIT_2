@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/axit.css">
     <link rel="stylesheet" href="./assets/styles/awesome.css">
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="./assets/styles/reviews.css">
     <link rel="stylesheet" href="./assets/styles/design.css">
     <link rel="stylesheet" href="./assets/styles/contact.css">
+    <link rel="stylesheet" href="./assets/styles/banner.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,32 +26,62 @@
         <span class="header__logo">
             <img src="./assets/icons/logo.svg" alt="AXIT">
         </span>
-        <nav class="header__navigation">
-            <a class="header__navigation__normal" href="#">Features</a>
-            <a class="header__navigation__normal" href="#">About</a>
-            <a class="header__navigation__normal" href="#">Pricing</a>
-            <a class="header__navigation__normal" href="#">Reviews</a>
-            <a class="header__navigation__normal" href="#">Contact</a>
+        <nav class="header-navigation">
+            <a class="header-navigation__normal" href="#">Features</a>
+            <a class="header-navigation__normal" href="#">About</a>
+            <a class="header-navigation__normal" href="#">Pricing</a>
+            <a class="header-navigation__normal" href="#">Reviews</a>
+            <a class="header-navigation__normal" href="#">Contact</a>
         </nav>                     
     </header>
 
     <main class="AXIT">
+        <section class="banner">
+            <div class="banner-image">
+                <div class="banner-section">
+                    <div class="sign">
+                        <div class="logo">
+                            <img class="logo__ax" src="./assets/icons/AX.svg" alt="AX">
+                            <img class="logo__it" src="./assets/icons/IT.svg" alt="AX">
+                        </div>
+                        <h1 class="sign__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                        <p class="sign__subtitle">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                        <button class="download">Download</button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="form">
+                                <div class="text">
+                                    <h2 class="text__black">TRY YOUR <span class="text__red">FREE</span> TRIAL TODAY</h2>
+                                </div>
+                                <input class="form__line" type="text" placeholder="Name">
+                                <input class="form__line" type="email" placeholder="Email">
+                                <input class="form__line" type="password" placeholder="Password">
+                                <button class="form__btn">Get started</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
        
         <section class="social">
-            <div class="social-text">
-                <h4 class="social-text__title">Social Media</h4>
-                <h5 class="social-text__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aenean euismod bibendum laoreet. </h5>
-            </div>        
-            <div class="social-icon">
-                <a href="#" class="social-icon_media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
-                <a href="#" class="social-icon_media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
+            <div class="social-container">
+                <div class="social-text">
+                    <h4 class="social-text__title">Social Media</h4>
+                    <h5 class="social-text__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet. </h5>
+                </div>        
+                <div class="social-icon">
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
+                    <a href="#" class="social-icon__media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
+                </div>
             </div>
+            
         </section>
 
         <section class="tabs">
@@ -167,47 +200,97 @@
         </section>
 
         <section class="reviews">
+        <div class="reviews-section">
             <h2 class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
             <p class="reviews__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="block">
-                <div class="block__opinion">
-                    <div class="block__opinion__upper-opinion">
-                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                <div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
                     </div>
-                    <div class="block__opinion__message-opinion"></div>
-                    <div class="block__opinion__down-opinion">
-                        <img src="./assets/images/Men_1.png" alt="images" class="block__opinion__images-preview">
-                        <div class="block__opinion-peopleblock">
-                            <h4 class="block__opinion-peopleblock__title">Davis Rhiel Madsen</h4>
-                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_1.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Davis Rhiel Madsen</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
                         </div>
                     </div>
                 </div>
-                <div class="block__opinion">
-                    <div class="block__opinion__upper-opinion">
-                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                <div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
                     </div>
-                    <div class="block__opinion__message-opinion"></div>
-                    <div class="block__opinion__down-opinion">
-                        <img src="./assets/images/Men_2.png" alt="images" class="block__opinion__images-preview">
-                        <div class="block__opinion-peopleblock">
-                            <h4 class="block__opinion-peopleblock__title">Jaydon Rosser</h4>
-                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_2.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Jaydon Rosser</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
                         </div>
                     </div>
-                </div><div class="block__opinion">
-                    <div class="block__opinion__upper-opinion">
-                        <h5 class="block__opinion__upper-opinion__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                </div><div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
                     </div>
-                    <div class="block__opinion__message-opinion"></div>
-                    <div class="block__opinion__down-opinion">
-                        <img src="./assets/images/Men_3.png" alt="images" class="block__opinion__images-preview">
-                        <div class="block__opinion-peopleblock">
-                            <h4 class="block__opinion-peopleblock__title">Cooper Dorwart</h4>
-                            <p class="block__opinion-peopleblock__subtitle">Manager</p>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_3.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Cooper Dorwart</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+            </div>
+ 
+        </div>
+            
+            
+        
+        
+        
+            <!-- <h2 class="reviews__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+            <p class="reviews__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="block">
+                <div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_1.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Davis Rhiel Madsen</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
                         </div>
                     </div>
                 </div>
+                <div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_2.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Jaydon Rosser</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+                </div><div class="block-opinion">
+                    <div class="block-upper">
+                        <h5 class="block-upper__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</h5>
+                    </div>
+                    <div class="block-message"></div>
+                    <div class="block-down">
+                        <img src="./assets/images/Men_3.png" alt="images" class="block-down__images">
+                        <div class="block-peopleblock">
+                            <h4 class="block-peopleblock__title">Cooper Dorwart</h4>
+                            <p class="block-peopleblock__subtitle">Manager</p>
+                        </div>
+                    </div>
+            </div> -->
+
         </section>
 
         <section class="design">
@@ -217,43 +300,35 @@
         </section>
 
         <section class="contact">
-            <h2 class="contact__title">CONTACT US</h2> 
-            <div class="contact__subtitle">Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</div> 
-            <div class="contact__areas">
-                <div class="contact__areas__inputs">
-                    <span>
-                        <input class="contact__areas__inputs__line" type="text" placeholder="Name" name="first_name">
-                    </span> 
-                    <span>
-                        <input class="contact__areas__inputs__line" type="email" placeholder="Email" name="email">
-                    </span> 
-                    <span>
-                        <input class="contact__areas__inputs__line" type="password" placeholder="Password" name="password">
-                    </span>
-                </div>
-                <div class="contact__message">
-                    <textarea name="message" class="contact__areas__inputs__line" cols="30" placeholder="Message" rows="10"></textarea>
-                </div>
-            </div>                             
-               
-            <span class="contact__btn">
-                <button class="contact__btn__submit">Send message</button>
-            </span>
+            <form>
+                <h2 class="contact__title">CONTACT US</h2> 
+                <div class="contact__subtitle">Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</div> 
+                <div class="contact-areas">
+                    <div class="contact-inputs">
+                        <input class="contact-inputs__line" type="text" placeholder="Name" name="first_name">
+                        <input class="contact-inputs__line" type="email" placeholder="Email" name="email">
+                        <input class="contact-inputs__line" type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="contact-message">
+                        <textarea name="message" class="contact-inputs__line" cols="30" placeholder="Message" rows="10"></textarea>
+                    </div>
+                </div>                             
+                <button class="contact-btn">Send message</button>
+            </form>          
         </section>
 
         <footer class="footer">
             <div class="footer-icon">
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
-                <a href="#" class="footer-icon_media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/facebook_icon.svg" alt="fasebook"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/twitter_icon.svg" alt="twitter"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/linkedin_icon.svg" alt="linkedin"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/pinterest_icon.svg" alt="pinterest"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/instagram_icon.svg" alt="instagram"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/github_icon.svg" alt="github"></a>
+                <a href="#" class="footer-icon__media"><img src="./assets/icons/rss_icon.svg" alt="rss"></a> 
             </div>
             <h5 class="footer__subtitle">© 2015 Axure Themes</h5>
         </footer>
-
-    </main>
+    </main> 
 </body>
 </html>

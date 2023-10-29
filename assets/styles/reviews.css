@@ -3,6 +3,14 @@
     margin: 0 auto;
 }
 
+.reviews-section {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .reviews__title{
     display: flex;
     width: 1170px;
@@ -41,26 +49,25 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-.block__opinion {
-    margin: 30px;
-}
-.block__opinion__upper-opinion {
-    width: 370px;
+.block-upper {
+    width: 350px;
     height: 180px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #E2E2E2;
-    padding: 20px;
+    padding: 10px;
 }
-.block__opinion__message-opinion {
+
+.block-message {
     color: #fff;
 }
 
-.block__opinion__upper-opinion__title {
-    width: 370px;
+.block-upper__title {
+    width: 350px;
     color: #86878B;
     text-align: center;
     font-family: Raleway;
@@ -69,21 +76,21 @@
     margin: 38px 0 37px 0;
 }
 
-.block__opinion__message-opinion::after {
+.block-message::after {
     content: '';
     position: absolute;
     margin-left: 60px;
     border: 20px solid transparent;
     border-top: 20px solid #E2E2E2;
 }
-.block__opinion__down-opinion {
+.block-down {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 70px;
 }
 
-.block__opinion__images-preview {
+.block-down__images {
     width: 70px;
     height: 70px;
     background-size: 100%;
@@ -91,7 +98,7 @@
     margin-right: auto;
 }
 
-.block__opinion-peopleblock__title {
+.block-peopleblock__title {
     display: flex;
     width: 269px;
     height: 54px;
@@ -103,7 +110,7 @@
     font-weight: 700;
 }
 
-.block__opinion-peopleblock__subtitle {
+.block-peopleblock__subtitle {
     width: 270px;
     color: #000;
     font-family: Raleway;
@@ -111,4 +118,5 @@
     font-weight: 400;
     margin-top: 15px;
 }
+
 

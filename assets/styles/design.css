@@ -52,7 +52,17 @@
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 600;
-    border: 2px white solid;
+    border: 3px white solid;
     margin-top: 50px;
+}
+
+.design__download:hover {
+    border: 3px #771111 solid;
+    color: #771111;
+}
+
+.design__download:active {
+    background-color: #771111;
+    color: #FFF;
 }
 

@@ -9,11 +9,11 @@
     position: fixed;
 }
 
-.header__navigation {
+.header-navigation {
     display: flex;
     gap: 20px;
 }
-.header__navigation__normal {
+.header-navigation__normal {
     display: flex;
     width: 113.799px;
     height: 75px;

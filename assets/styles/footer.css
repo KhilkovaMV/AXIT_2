@@ -8,17 +8,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 470.8px;
-    margin-left: 470px;
     align-items: center; 
 }
 
 
-.footer-icon_media {
+.footer-icon__media {
     width: 53.2px;
     height: 53.2px;
     color: #CCCCCC;
     padding: 35px;
+    margin: 0;
 }
 
 
