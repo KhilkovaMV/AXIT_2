@@ -3,6 +3,10 @@
     margin: 50px 0 50px 0;
 }
 
+.contact * {
+    margin: 0 auto;
+}
+
 .contact__title {
     display: flex;
     width: 1170px;
@@ -39,7 +43,7 @@
 .contact-areas {
     display: flex;
     justify-content: space-around;
-    width: 600px;
+    width: 1170px;
 }
 
 .contact-inputs {
@@ -47,7 +51,7 @@
     justify-content: center;
     gap: 10px;
     flex-direction: column;
-    width: 100%;
+    margin: 0;
     height: 100%;
 }
 
@@ -104,5 +108,78 @@
     background-color: #EC7979;
 }
 
+@media screen and (max-width:1235px) {
+    .contact-areas {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
 
+    .contact-message {
+        margin: 0;
+    }
+
+    .contact__title {
+        width: 90%;
+    }
+    .contact__subtitle {
+        width: 90%;
+    }
+
+    .contact-btn {
+        width: 318px;
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .contact-inputs {
+        margin: 0;
+    }
+    
+    .contact-inputs__line {
+        width: 486px;
+    }
+    .contact-message textarea {
+        width: 486px;
+    }
+}
+
+@media screen and (max-width:1070.56px) {
+    .contact-btn {
+        width: 288px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .contact-inputs__line {
+        width: 420px;
+    }
+    .contact-message textarea {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width:935px) {
+    .contact {
+        height: 807px;
+    }
+
+    .contact-areas {
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .contact-message {
+        margin-top: 30px;
+   }
+}
+
+@media screen and (max-width:480px) {
+    .contact-inputs__line {
+        width: 288px;
+    }
+    .contact-message textarea {
+        width: 288px;
+    }
+}
 

@@ -1,7 +1,8 @@
 .price {
     width: 100%;
-    height: 900px;
+    height: auto;
     background: #F5F5F5;
+    padding-bottom: 70px;
 }
 
 .options {
@@ -46,12 +47,10 @@
     margin-top: 70px;
 }
 
-#main_product {
-    transition: 0.5s;
-}
 #main_product:hover {
     transform: translate(0px, -20px);
     box-shadow: 0px 0px 15px gray ;
+    transition: 0.5s;
 }
 
 .product {
@@ -107,7 +106,6 @@
 
 .product-down {
     width: 370px;
-    border: 2px solid #F5F5F5;
     background: #FFF;
 }
 
@@ -124,3 +122,140 @@
     text-transform: capitalize;
     border: 2px solid #F5F5F5;    
 }
+
+
+@media screen and (max-width:1200px) {
+    .block-upper__title {
+        font-size: 14px;         
+    }
+        
+    .tables {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .options {
+        width: 100%;
+    }
+    
+    .options__title{
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .options__subtitle{
+        width: 100%;
+        font-size: 14px;
+    }
+    .product {
+        margin-bottom: -30px;
+        width: 317px;
+    }
+
+    .product-upper {
+        width: 317px;
+    }
+
+    .product-down {
+        width: 317px;
+    }
+
+    .product-upper__name {
+        font-size: 24px;
+        height: 53px;
+    }
+
+    .product-upper__price {
+        font-size: 36px;
+        height: 87px;
+    }
+
+    .product-upper__sign {
+        font-size: 18px;
+        height: 44px;
+    }
+
+    .product-down__info {
+        font-size: 18px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width:1000px) {    
+    .product {
+        width: 290px;
+    }
+
+    .product-upper {
+        width: 290px;
+    }
+
+    .product-down {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width:905px) {
+    .price {
+        padding-bottom: 25px;
+    }
+    .block-upper__title {
+        font-size: 14px;         
+    }
+        
+    .tables {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .options {
+        width: 100%;
+    }
+    
+    .options__title{
+        width: 100%;
+    }
+
+    .options__subtitle{
+        width: 100%;
+    }
+    .product {
+        width: 288px;
+    }
+
+    #main_product:hover {
+        transform: none;
+        box-shadow: none ;
+    }
+
+    .product-upper {
+        width: 288px;
+    }
+
+    .product-down {
+        width: 288px;
+    }
+
+    .product-upper__name {
+        font-size: 18px;
+        height: 47px;
+    }
+
+    .product-upper__price {
+        font-size: 24px;
+        height: 78px;
+    }
+
+    .product-upper__sign {
+        font-size: 14px;
+        height: 39px;
+    }
+
+    .product-down__info {
+        font-size: 14px;
+        height: 39px;
+    }
+}
+
+
+
